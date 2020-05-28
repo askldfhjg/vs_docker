@@ -11,7 +11,7 @@ ENV LANG zh_CN.UTF-8
 RUN nodejs -v
 
 WORKDIR /root
-RUN git https://github.com/microsoft/vscode.git
+RUN git clone https://github.com/microsoft/vscode.git
 WORKDIR /root/vscode
 RUN git checkout master
 RUN git pull https://github.com/microsoft/vscode.git master
