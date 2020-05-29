@@ -16,4 +16,4 @@ WORKDIR /root/vscode
 RUN git checkout master
 RUN git pull https://github.com/microsoft/vscode.git master
 RUN yarn
-CMD yarn web
+CMD yarn watch
